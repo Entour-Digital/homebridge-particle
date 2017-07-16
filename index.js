@@ -81,11 +81,11 @@ function ParticleAccessory(log, url, access_token, device) {
 			.on('set', this.setState.bind(this));
 
 		this.lightService
-			.getCharacteristic(new Characteristic.Brightness())
+			.getCharacteristic(Characteristic.Brightness)
 			.on('set', this.setBrightness.bind(this));
 
 		bulbService
-			.getCharacteristic(new Characteristic.Hue())
+			.getCharacteristic(Characteristic.Hue)
 			.on('set', this.setHue.bind(this));
 
 		this.services.push(this.lightService);
