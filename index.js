@@ -176,11 +176,11 @@ ParticleAccessory.prototype.setState = function (state, callback) {
 	);
 }
 
-Particle.prototype.setBrightness = function(state, callback){
+ParticleAccessory.prototype.setBrightness = function(state, callback){
 
 }
 
-Particle.prototype.setHue = function(state, callback){
+ParticleAccessory.prototype.setHue = function(state, callback){
 	
 }
 
